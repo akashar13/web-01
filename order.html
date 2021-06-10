@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="order.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+    </head>
+    <body>
+        
+        <div>
+            <form id=buypro action="" onsubmit="return validate()" >
+        <div class=formi>
+           
+                <center><h1> Order Form</h1> </center>
+                    
+               
+                <div class="paddtxt">
+                <label for="name">Name</label>
+                <span>*</span>
+                <input type="text" id="name" name="name" placeholder="Your name.." >
+            </div>
+            <div class="paddtxt">
+                <label for="mobile">Mobile</label>
+                <span>*</span>
+                <input type="text" id="mobile" name="number"  placeholder="Your mobile number..">
+            </div>
+        <div class="paddtxt">
+                <label for="email">Email</label>
+                <span>*</span>
+                <br>
+                
+                <input type="email" id="mail"  placeholder="Your e-mail id..">
+        </div>
+            
+            
+                
+                
+        <div class="padd">
+                <label for="Location">Location</label>
+                <select id="loc" >
+                    <option value="select">Select</option>
+                  <option value="india">India</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+            </div>
+                <div class="padd">
+                <label for="category">Category</label>
+                <select id="cat" name="category" onchange="populate(cat,breed)">
+                    <option value="select">Select</option>
+                  <option value="poultry">Poultry</option>
+                  <option value="dairy">Dairy</option>
+                  <option value="tree">Tree</option>
+                </select>
+            </div>
+                <div class="padd">
+                    <label for="breed" id="br" class="bottom">Breed</label><br>
+                   
+                <select id="breed" name="breed"  size=3 class=size>
+               
+                  
+                </select>
+                </div>
+                <script src="index.js"></script>
+              <div class="padd">
+                <label for="Service required">Service Required: </label>
+                <input type="checkbox" id="cage" name="cage" value="cage">
+                <label class=requirement for="cage">Cage</label>
+
+            
+                <input type="checkbox" id="transportation" name="transportation" value="transportation">
+                <label class=requirement for="transportation">Transportation</label>
+
+                <input type="checkbox" id="sales" name="sales" value="sales">
+                <label class=requirement for="sales">Sales</label><br>
+                </div>
+                <div class="padd">
+                <label for="Payment mode" id=mode>Payment mode : </label>
+                <input type="radio"  name="mode" value="cash" >
+                <label class=requirement for="cash">Cash</label>
+                <input type="radio"  name="mode" value="online" >
+                <label class=requirement for="online">Pay Online</label><br>
+                </div>
+                <center>
+                <div class="padd">
+                    <div id="error_message">
+                    </div>
+                    
+                    <button value=clear class="clear" type="reset">Clear</button>
+                
+
+                
+                <button value=Submit class="submit" id="submit" onclick="AddRow()">Submit</button>
+                
+            </center>
+            </div>
+              </form>
+            
+              <script src="validation.js"></script>
+              
+            </div>
+              <div>
+                  <center>
+              <table width=500 border="4" id="show">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                        <th>Location</th>
+                        <th>category</th>
+                        <th>breed</th>
+                        <th>Payment Mode</th>
+                    </tr>
+                </thead>
+            </table>
+            
+            <script src="return.js"></script>
+        </center>
+        </div>
+
+
+    
+
+    </body>
+</html>

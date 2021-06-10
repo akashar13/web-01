@@ -1,0 +1,4 @@
+var res="Name:"+name+"Mobile:"+phone+"E-Mail:"+email+"    Location:"+document.getElementById("loc").value+"Breed:"+document.getElementById("breed")+
+  // "Services:"+service+"Payment"+payment
+  // $("#result").append(res);  
+  // console.log(res)  

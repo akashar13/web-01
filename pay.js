@@ -1,0 +1,3 @@
+function payout(){
+    location.reload();
+  }
